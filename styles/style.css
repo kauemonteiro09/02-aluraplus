@@ -38,20 +38,20 @@ body {
 }
 
 .aluraplus__assinatura {
-  background: url('/assets/Background.png') no-repeat;
-  background-size: cover;
-  flex: 1; /* Faz com que este elemento cresça para ocupar o espaço disponível */
+  background: url('/assets/Background.png') no-repeat; /* Centraliza a imagem */
+  background-size: cover; /* Faz a imagem cobrir todo o elemento */
 }
 
 .aluraplus__assinatura__content {
   width: 36rem;
-  padding: 8rem 4rem;
+  padding: 2%;
+  margin: 2%;
   text-align: center;
 }
 
 .assinatura__titulo {
   color: var(--titulo-texto-cor);
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: var(--espessura-titulos);
   text-align: center;
 }
@@ -67,12 +67,13 @@ body {
   gap: 1rem;
   width: 32rem;
   margin: auto;
+  font-size: 1.5rem;
 }
 
 .assinatura__ancora-a,
 .assinatura__ancora-b {
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1.25rem;
   color: var(--titulo-texto-cor);
   text-decoration: none;
 }
@@ -111,7 +112,7 @@ body {
 .informacao__notebook {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 10%;
   padding: 5rem;
 }
 
@@ -121,9 +122,9 @@ body {
 }
 
 .informacao__paragrafo {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: var(--espessura-paragrafo);
-  max-width: 36rem;
+  max-width: 56rem;
   width: 100%;
   margin: 1rem 0;
   padding-bottom: 1.25rem;
@@ -131,10 +132,11 @@ body {
 }
 
 .informacao__img {
-  width: 32rem;
+  width: 50%;
 }
 
 .informacao__ancora {
+  font-size: 1.5rem;
   border-radius: 0.5rem;
   padding: 1rem;
   color: var(--titulo-texto-cor);
@@ -152,14 +154,16 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 75rem;
-  padding: 10rem;
+  max-width: 100%;
 }
 
 .informacao__dispositivos__icones {
   display: flex;
   text-align: center;
+  justify-content: center; /* Centraliza os ícones dentro do container */
   padding-top: 4rem;
+  box-sizing: border-box;
+  gap: 2%;
 }
 
 .dispositivos__subtitulo {
@@ -176,6 +180,7 @@ body {
   color: var(--rodape-texto-cor);
   font-family: var(--fonte-principal);
   font-size: 0.875rem;
+  padding: 2rem;
 }
 
 .rodape__lista {
@@ -184,6 +189,7 @@ body {
   width: 100%; /* Ajusta a largura para 100% */
   max-width: 75rem;
   padding-top: 2rem;
+  text-align: center;
 }
 
 .rodape__lista__item {
@@ -198,166 +204,339 @@ body {
   line-height: 150%;
 }
 
-@media (min-width: 1650px) {
+@media (max-width: 767px) {
+  .aluraplus__assinatura {
+    background-size: cover;
+  }
   .aluraplus__assinatura__content {
-    width: 45%;
-    padding: 5% 5%;
-    text-align: center;
+    width: 80%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+    padding: 2%; /* Reduz o padding para evitar excesso de espaço */
   }
 
   .assinatura__titulo {
-    color: var(--titulo-texto-cor);
-    font-size: 3rem;
-    font-weight: var(--espessura-titulos);
-    text-align: center;
+    font-size: 1rem; /* Reduz o tamanho da fonte para melhor ajuste */
   }
 
   .assinatura__img {
-    width: 50%;
-    padding: 2rem 0 3.5rem 0;
+    width: 50%; /* Aumenta a largura da imagem para ocupar mais espaço */
+    padding: 1rem 0; /* Reduz o padding superior e inferior */
   }
 
   .assinatura__info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 70%;
-    margin: auto;
+    justify-content: center;
+    width: 80%; /* Aumenta a largura para melhor ajuste */
+    gap: 0.5rem;
   }
 
   .assinatura__ancora-a,
   .assinatura__ancora-b {
-    font-size: 2rem;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    color: var(--titulo-texto-cor);
-    text-decoration: none;
-  }
-
-  .assinatura__ancora-a:hover {
-    background-color: var(--cor-ancora-hover-a);
-  }
-
-  .assinatura__ancora-b:hover {
-    background-color: var(--cor-ancora-hover-b);
-  }
-
-  .assinatura__ancora-a {
-    background-color: var(--cor-ancora-a);
-  }
-
-  .assinatura__ancora-b {
-    border: 1px solid var(--titulo-texto-cor);
+    font-size: 0.75rem; /* Reduz o tamanho da fonte dos botões */
+    padding: 0.5rem; /* Ajusta o padding para não ficarem muito grandes */
   }
 
   .assinatura__paragrafo {
-    font-size: 2rem;
-    color: var(--rodape-texto-cor);
-  }
-
-  .aluraplus__informacao {
-    contain: none;
+    font-size: 0.6rem; /* Reduz o tamanho da fonte do parágrafo */
   }
 
   .informacao__plataforma,
   .informacao__telas,
   .informacao__notebook {
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    padding: 5%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 5%;
+    width: 80%;
+  }
+
+  .informacao__telas {
+    flex-direction: column-reverse;
   }
 
   .informacao__titulo {
-    font-size: 5rem;
-    font-weight: var(--espessura-titulos);
-    width: 100%; /* Ajuste a largura para ocupar todo o espaço disponível */
-    max-width: none; /* Remove a limitação de largura máxima */
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
   }
 
   .informacao__paragrafo {
-    font-size: 2.75rem; /* Aumenta o tamanho da fonte para destacar o texto */
-    font-weight: var(--espessura-paragrafo);
-    width: 100%; /* Ajusta para ocupar toda a largura */
-    max-width: none; /* Remove a limitação de largura máxima */
-    margin: 0.5rem 0; /* Reduz a margem para economizar espaço */
-    padding-bottom: 4rem; /* Reduz o padding inferior */
-    color: var(--paragrafo-texto-cor);
+    font-size: 1rem; /* Ajusta o tamanho da fonte do parágrafo */
+    padding: auto;
   }
 
   .informacao__img {
-    width: 100%; /* Faz a imagem ocupar toda a largura */
-    max-width: none; /* Remove o limite de largura */
-    margin: 0; /* Remove o espaçamento externo da imagem */
+    margin-top: 5%;
+    width: 65%; /* Ajusta a largura da imagem */
   }
 
   .informacao__ancora {
-    font-size: 2rem;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    color: var(--titulo-texto-cor);
-    text-decoration: none;
-    background-color: var(--cor-ancora-a);
-  }
-
-  .informacao__ancora:hover {
-    background-color: var(--cor-ancora-hover-a);
+    font-size: 1rem;
   }
 
   .informacao__dispositivos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: none;
+    box-sizing: border-box;
+    padding: 2%;
   }
 
   .informacao__dispositivos__icones {
-    display: flex;
-    text-align: center;
-    padding-top: 5rem;
-    gap: 5%;
+    padding-top: 1rem; /* Ajusta o padding superior */
+  }
+
+  .dispositivos__icones {
+    width: 100%; /* Tamanho padrão dos ícones */
+    height: auto; /* Mantém a proporção da imagem */
   }
 
   .dispositivos__subtitulo {
-    padding: 5%;
-    font-size: 3rem;
-
+    font-size: 0.75rem;
     font-weight: var(--espessura-titulos);
   }
 
   .rodape {
-    background-color: #00030c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem; /* Aumenta o espaço entre os itens */
-    color: var(--rodape-texto-cor);
-    font-family: var(--fonte-principal);
-    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
-    width: 100%; /* Faz o rodapé ocupar toda a largura disponível */
-    padding: 2rem 0; /* Aumenta o padding para maior espaçamento */
-  }
-
-  .rodape__logo {
-    width: 10%; /* Aumenta a largura da logo */
-    max-width: none; /* Remove a limitação de largura */
-    margin-bottom: 1rem; /* Adiciona espaçamento inferior */
+    padding: 1.5rem; /* Ajusta o padding */
+    gap: 0.5rem;
   }
 
   .rodape__lista {
-    display: flex;
-    justify-content: space-between;
-    width: 80%; /* Ocupa toda a largura */
-    max-width: none; /* Remove o limite de largura */
-    padding-top: 3rem; /* Aumenta o espaçamento superior */
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens */
+    padding-top: 1rem; /* Ajusta o padding superior */
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .rodape__lista__item {
+    font-size: 0.75rem; /* Reduz o tamanho da fonte do rodapé */
   }
 
   .rodape__paragrafo {
+    font-size: 0.65rem; /* Reduz o tamanho da fonte do parágrafo do rodapé */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aluraplus__assinatura {
+    background-size: cover;
+  }
+  .aluraplus__assinatura__content {
+    width: 55%; /* Aumenta a largura para ocupar mais espaço em telas menores */
+    padding: 5%; /* Reduz o padding para evitar excesso de espaço */
+  }
+
+  .assinatura__titulo {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte para melhor ajuste */
+  }
+
+  .assinatura__img {
+    width: 60%; /* Aumenta a largura da imagem para ocupar mais espaço */
+    padding: 1rem 0; /* Reduz o padding superior e inferior */
+  }
+
+  .assinatura__info {
+    width: 80%; /* Aumenta a largura para melhor ajuste */
+  }
+
+  .assinatura__ancora-a,
+  .assinatura__ancora-b {
+    font-size: 1rem; /* Reduz o tamanho da fonte dos botões */
+    padding: 0.8rem; /* Ajusta o padding para não ficarem muito grandes */
+  }
+
+  .assinatura__paragrafo {
+    font-size: 0.7rem; /* Reduz o tamanho da fonte do parágrafo */
+  }
+
+  .informacao__plataforma,
+  .informacao__telas,
+  .informacao__notebook {
+    gap: 2rem; /* Reduz o espaço entre os itens */
+    padding: 2rem; /* Reduz o padding para evitar excesso de espaço */
+  }
+
+  .informacao__titulo {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .informacao__paragrafo {
+    font-size: 1rem; /* Ajusta o tamanho da fonte do parágrafo */
+    padding-bottom: 1rem; /* Ajusta o padding inferior */
+  }
+
+  .informacao__img {
+    width: 40%; /* Ajusta a largura da imagem */
+  }
+
+  .informacao__ancora {
+    font-size: 1rem; /* Reduz o tamanho da fonte dos botões */
+    padding: 0.8rem; /* Ajusta o padding */
+  }
+
+  .informacao__dispositivos {
+    box-sizing: border-box;
+    padding: 5%;
+  }
+
+  .informacao__dispositivos__icones {
+    padding-top: 2rem; /* Ajusta o padding superior */
+  }
+
+  .dispositivos__icones {
+    width: 80%; /* Tamanho padrão dos ícones */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .dispositivos__subtitulo {
+    font-size: 1.5rem;
+    font-weight: var(--espessura-titulos);
+  }
+
+  .rodape {
+    font-size: 0.75rem; /* Reduz o tamanho da fonte do rodapé */
+    padding: 1.5rem; /* Ajusta o padding */
+    gap: 0.75rem;
+  }
+
+  .rodape__lista {
+    align-items: center; /* Centraliza os itens */
+    padding-top: 1rem; /* Ajusta o padding superior */
     text-align: center;
-    width: 100%; /* Faz com que o parágrafo ocupe toda a largura disponível */
-    max-width: none; /* Remove a limitação de largura */ /* Aumenta a altura das linhas para melhorar a legibilidade */
-    font-size: 1.25rem; /* Aumenta o tamanho da fonte do parágrafo */
+    gap: 2%;
+  }
+
+  .rodape__lista__item {
+    font-size: 0.75rem; /* Reduz o tamanho da fonte dos itens do rodapé */
+  }
+
+  .rodape__paragrafo {
+    font-size: 0.7rem; /* Reduz o tamanho da fonte do parágrafo do rodapé */
+  }
+}
+
+@media (min-width: 1640px) {
+  .aluraplus__assinatura__content {
+    width: 50%; /* Diminuído para ajustar a largura */
+    padding: 4% 4%; /* Ajustado o padding */
+  }
+
+  .assinatura__titulo {
+    font-size: 2.5rem; /* Diminuído para ajuste */
+  }
+
+  .assinatura__img {
+    width: 45%; /* Diminuído para ajuste */
+    padding: 1.5rem 0 3rem 0; /* Ajustado o padding */
+  }
+
+  .assinatura__info {
+    width: 75%; /* Ajustado para ocupar 75% da largura */
+  }
+
+  .assinatura__ancora-a,
+  .assinatura__ancora-b {
+    font-size: 1.4rem; /* Diminuído para ajuste */
+    padding: 1.3rem; /* Ajustado o padding */
+  }
+
+  .assinatura__paragrafo {
+    font-size: 1.3rem; /* Diminuído para ajuste */
+  }
+
+  .informacao__titulo {
+    font-size: 4rem; /* Diminuído para ajuste */
+  }
+
+  .informacao__paragrafo {
+    font-size: 2.25rem; /* Diminuído para ajuste */
+  }
+
+  .informacao__ancora {
+    font-size: 1.8rem; /* Diminuído para ajuste */
+    padding: 1.5rem; /* Ajustado o padding */
+  }
+
+  .informacao__dispositivos {
+    padding: 5%;
+  }
+
+  .dispositivos__subtitulo {
+    font-size: 2.5rem; /* Diminuído para ajuste */
+  }
+
+  .rodape {
+    font-size: 1.3rem; /* Diminuído para ajuste */
+  }
+
+  .rodape__logo {
+    width: 8%; /* Diminuído para ajuste */
+  }
+
+  .rodape__paragrafo {
+    font-size: 1.1rem; /* Diminuído para ajuste */
+  }
+}
+
+@media (min-width: 2000px) {
+  .aluraplus__assinatura__content {
+    width: 40%; /* Diminuído para se adequar a telas grandes */
+    padding: 4% 4%; /* Ajustado o padding */
+  }
+
+  .assinatura__titulo {
+    font-size: 2.8rem; /* Levemente diminuído para ajuste */
+  }
+
+  .assinatura__img {
+    width: 45%; /* Diminuído para ajuste */
+    padding: 1.5rem 0 3rem 0; /* Ajustado o padding */
+  }
+
+  .assinatura__info {
+    width: 85%; /* Ajustado para se adequar à largura */
+  }
+
+  .assinatura__ancora-a,
+  .assinatura__ancora-b {
+    font-size: 1.4rem; /* Diminuído para ajuste */
+    padding: 1.2rem; /* Ajustado o padding */
+  }
+
+  .assinatura__paragrafo {
+    font-size: 1.3rem; /* Diminuído para ajuste */
+  }
+
+  .informacao__titulo {
+    font-size: 4.5rem; /* Diminuído para ajuste */
+  }
+
+  .informacao__paragrafo {
+    font-size: 2.5rem; /* Diminuído para ajuste */
+    padding-bottom: 5%;
+  }
+
+  .informacao__img {
+    width: 50%;
+  }
+
+  .informacao__ancora {
+    font-size: 1.8rem; /* Diminuído para ajuste */
+    padding: 1.5rem; /* Ajustado o padding */
+  }
+
+  .informacao__dispositivos {
+    padding: 5%;
+  }
+
+  .dispositivos__subtitulo {
+    font-size: 2.8rem; /* Diminuído para ajuste */
+  }
+
+  .rodape {
+    font-size: 1.3rem; /* Diminuído para ajuste */
+  }
+
+  .rodape__logo {
+    width: 9%; /* Diminuído para ajuste */
+  }
+
+  .rodape__paragrafo {
+    font-size: 1.15rem; /* Diminuído para ajuste */
   }
 }
