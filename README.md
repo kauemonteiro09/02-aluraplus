@@ -1,9 +1,8 @@
 # 🌐 Site de Assinatura de Conteúdo
 
-Este repositório contém o projeto de um **site de assinatura de conteúdo**, desenvolvido como parte do curso **HTML e CSS: praticando HTML/CSS** da Alura. O foco do projeto foi aprender a construir uma página web utilizando **HTML** e **CSS**, além de realizar o deploy para torná-la acessível na web.
+Este repositório contém o projeto de um **site de assinatura de conteúdo**, desenvolvido como parte do curso **HTML e CSS: praticando HTML/CSS** da Alura. Este projeto é a correção que fiz junto com a instrutora do curso. O foco foi aprender a construir uma página web utilizando **HTML** e **CSS**, além de realizar o deploy para torná-la acessível na web.
 
 [![image](https://github.com/user-attachments/assets/9b3d56fa-728d-4e24-9d92-e124435fb0f7)](https://cursos.alura.com.br/course/html-css-praticando-html-css)
-
 
 ## 📚 Sobre o Projeto
 
@@ -15,7 +14,7 @@ Neste projeto, apliquei os conceitos de desenvolvimento web com as seguintes eta
 - **Responsividade**: Utilização de **media queries** para garantir que as páginas sejam responsivas, aplicando conhecimentos obtidos na formação Alura de HTML e CSS. 📱
 - **Deploy com GitHub Pages ou Vercel**: Publicação do site para acesso online, facilitando a visualização e o compartilhamento. 🌍
 
-[![image](https://github.com/user-attachments/assets/31cc9042-ca9a-4aa8-8426-d6fd72899eba)](https://aluraplus-pro.vercel.app/);
+[![image](https://github.com/user-attachments/assets/a67fa2e4-5ec4-4183-850a-5239bd6de790)](https://aluraplus-pro.vercel.app/)
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -28,7 +27,6 @@ Neste projeto, apliquei os conceitos de desenvolvimento web com as seguintes eta
 ## 🎓 Certificado
 
 [![image](https://github.com/user-attachments/assets/3769da5f-de12-4b37-8ba2-688588c858b0)](https://cursos.alura.com.br/user/kauemonteiro09/course/html-css-praticando-html-css/certificate)
-
 
 ## 🚀 Conclusão
 
