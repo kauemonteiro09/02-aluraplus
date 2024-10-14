@@ -12,7 +12,7 @@ Neste projeto, apliquei os conceitos de desenvolvimento web com as seguintes eta
 - **Responsividade**: Utilização de **media queries** para garantir que as páginas sejam responsivas, aplicando conhecimentos obtidos na formação Alura de HTML e CSS. 📱
 - **Deploy com GitHub Pages ou Vercel**: Publicação do site para acesso online, facilitando a visualização e o compartilhamento. 🌍
 
-[![image](https://github.com/user-attachments/assets/1a60b05f-8aaf-4108-ae55-28bb84e1eca9)](https://aluraplus-pro.vercel.app/);
+[![image](https://github.com/user-attachments/assets/31cc9042-ca9a-4aa8-8426-d6fd72899eba)](https://aluraplus-pro.vercel.app/);
 
 ## 🛠️ Tecnologias Utilizadas
 
